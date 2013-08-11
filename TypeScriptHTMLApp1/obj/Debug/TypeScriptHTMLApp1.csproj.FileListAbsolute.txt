@@ -1,0 +1,5 @@
+c:\users\julian\documents\visual studio 2012\Projects\TypeScriptHTMLApp1\TypeScriptHTMLApp1\bin\TypeScriptHTMLApp1.dll
+c:\users\julian\documents\visual studio 2012\Projects\TypeScriptHTMLApp1\TypeScriptHTMLApp1\bin\TypeScriptHTMLApp1.pdb
+c:\users\julian\documents\visual studio 2012\Projects\TypeScriptHTMLApp1\TypeScriptHTMLApp1\obj\Debug\TypeScriptHTMLApp1.csprojResolveAssemblyReference.cache
+c:\users\julian\documents\visual studio 2012\Projects\TypeScriptHTMLApp1\TypeScriptHTMLApp1\obj\Debug\TypeScriptHTMLApp1.dll
+c:\users\julian\documents\visual studio 2012\Projects\TypeScriptHTMLApp1\TypeScriptHTMLApp1\obj\Debug\TypeScriptHTMLApp1.pdb

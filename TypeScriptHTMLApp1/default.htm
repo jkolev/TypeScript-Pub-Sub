@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="EventManager.js"></script>
+</head>
+<body>
+    <h1 id="h1">Typescript Pub/Sub Ex</h1>
+   
+    <div><input type="button" id="button1" value="Publish message1"/></div>
+    <div><input type="button" id="button2" value="Publish message2"/></div>
+    <div>
+        <input id="input1" type="text" style="width: 300px"/>
+    </div>
+    <div>
+        <input id="input2" type="text" style="width: 300px"/>
+    </div>
+    <div>
+        <textarea id="txtarea" rows="10" style="width: 300px"></textarea>
+    </div>
+
+    <script type="text/javascript">
+        var eventManager = new Events.EventManager();
+
+        eventManager.Subscribe("message1", function (message) {
+            document.getElementById("input1").value = message;
+            document.getElementById('txtarea').value += '\n' + message;
+        });
+
+        eventManager.Subscribe("message2", function(message) {
+            document.getElementById("input2").value = message;
+            document.getElementById('txtarea').value += '\n' + message;
+        });
+
+        document.getElementById("button1").onclick = function () {
+            eventManager.Publish("message1", "Hi! I'm subsribed to 'message1'");
+        };
+
+        document.getElementById("button2").onclick = function () {
+            eventManager.Publish("message2", "Hi! I'm subsribed to 'message2'");
+        };
+
+    </script>
+
+</body>
+</html>
